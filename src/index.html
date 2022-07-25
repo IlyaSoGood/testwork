@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Diamed</title>
+    <link rel="stylesheet" href="css/style.min.css">
+</head>
+<body>
+    <header class="header">
+        <div class="container">
+            <div class="header__wrapper">
+                <div class="header__logo">
+                    <a href="#" class="header__logo_main">
+                        <img src="icons/logo.svg" alt="logo">
+                    </a>
+                    <a href="#" class="header__logo_sub">
+                        <img src="icons/sub_logo.svg" alt="sublogo">
+                    </a>
+                </div>
+                <ul class="header__menu">
+                    <li><a href="#selection">Подбор профосмотра</a></li>
+                    <li><a href="#">Услуги</a></li>
+                    <li><a href="#">О медцентре</a></li>
+                    <li><a href="#">Галерея</a></li>
+                    <li><a href="#">Благодарности</a></li>
+                    <li><a href="#">Лицензии</a></li>
+                    <li><a href="#">Контакты</a></li>
+                </ul>
+            </div>
+            <div class="header__contacts">
+                <a href="mailto:prof@diamed.group" class="header__email">prof@diamed.group</a>
+                <a href="tel:+74952815333" class="header__phone">+7 (495) 281 53 33</a>
+                <div class="header__city">Ваш город: <span>Королев</span></div>
+            </div>
+        </div>
+        <div class="hamburger">
+            <span>
+            </span>
+            <span>
+            </span>
+            <span>              
+            </span>
+        </div>
+    </header>
+    <section class="promo">
+        <div class="container">
+            <div class="promo__wrapper">
+                <h1 class="promo__title">Проведение профосмотров<br>от 600 руб./чел.</h1>
+                <h2 class="promo__subtitle">с выездом в вашу организацию</h2>
+                <div class="promo__item-wrapper">
+                    <div class="promo__item">
+                        <div class="promo__item-icon"><img src="icons/promo_cycle.svg" alt="cycle"></div> 
+                        <div class="promo__item-descr">Сделаем за вас все:<br>от подбора типа профосмотра<br>до выдачи всех документов</div>
+                    </div>
+                    <div class="promo__item">
+                        <div class="promo__item-icon"><img src="icons/promo_list.svg" alt="list"></div> 
+                        <div class="promo__item-descr">Работаем строго по 302н Приказу Минздравсоцразвития</div>
+                    </div>
+                    <div class="promo__item">
+                        <div class="promo__item-icon"><img src="icons/promo_calendar.svg" alt="calendar"></div> 
+                        <div class="promo__item-descr">Результаты профосмотра<br>всего за 7 дней</div>
+                    </div>
+                </div>
+                <a href="#selection">Подобрать профосмотр</a>
+            </div>
+            <img src="img/promo_girl.webp" alt="girl" class="promo__img">
+            <form action="#" class="feed-form">
+                <div class="feed-form__title">Оставьте заявку, и мы предоставим полный план профосмотра<br>с расчетом итоговой стоимости, подходящий именно вашей организации</div>
+                <input required type="tel" name="phone" placeholder="Ваш номер телефона*">
+                <button>Получить коммерческое предложение</button>
+                <div class="feed-form__descr">Передавая информацию сайту, вы принимаете условия<br>
+                    <a href="#">Политики защиты персональной информации</a>
+                </div>
+            </form>
+        </div>
+    </section>
+
+    <section class="selection" id="selection">
+        <div class="container">
+            <h2 class="selection__title">Не знаете, какой профосмотр подойдет вашей организации?</h2>
+            <h3 class="selection__subtitle">Ответьте на 4 вопроса, и мы подберем подходящий профосмотр, рассчитаем<br>стоимость его проведения и вышлем коммерческое предложение</h3>
+            <div class="tabcontainer">
+                <div class="tabcontent">
+                    <img src="img/selection_activity.webp" alt="engineer" class="tabcontent__img">
+                    <div class="tabcontent__wrapper">
+                        <div class="tabcontent__title">
+                            <div class="tabcontent__title-icon">1</div>
+                            <h3 class="tabcontent__title-text">Чем занимается ваша организация?</h3>
+                        </div>
+                        <form action="#" class="form-activity" data-form>
+                            <textarea required placeholder="Введите ответ" name="text-activity" class="text-activity"></textarea>
+                            <button class="button_next">Далее
+                                <img src="icons/arrow_next.svg" alt="nextarrow">
+                            </button>
+                        </form>
+                    </div>
+                </div>
+                
+                <div class="tabcontent">
+                    <img src="img/selection_services.webp" alt="doctor" class="tabcontent__img">
+                    <div class="tabcontent__wrapper">
+                        <div class="tabcontent__title">
+                            <div class="tabcontent__title-icon">2</div>
+                            <h3 class="tabcontent__title-text">Укажите вид необходимой услуги<br>(Можно выбрать несколько вариантов)</h3>
+                        </div>
+                        <form action="#" class="form-services" data-form>
+                            <div class="form-wrapper">
+                                <div class="form-wrapper__item"><input type="checkbox">Предварительный/периодический медицинский осмотр</div>
+                                <div class="form-wrapper__item"><input type="checkbox">Выездной медицинский осмотр (профосмотр)</div>
+                                <div class="form-wrapper__item"><input type="checkbox">Личные медицинские книжки (ЛМК)</div>
+                                <div class="form-wrapper__item"><input type="checkbox">Психиатрическое освидетельствование</div>
+                                <div class="form-wrapper__item"><input type="checkbox">Предрейсовые/послерейсовые профосмотры</div>
+                                <div class="form-wrapper__item"><input type="checkbox">Предсменные/послесменные профосмотры</div>
+                            </div>
+                            <div class="form-wrapper">
+                                <div class="form-wrapper__item"><input type="checkbox">Организация здравпункта на предприятии</div>
+                                <div class="form-wrapper__item"><input type="checkbox">Диспансеризация</div>
+                                <div class="form-wrapper__item"><input type="checkbox">Вакцинация</div>
+                                <div class="form-wrapper__item"><input type="checkbox">Помощь в организации аттестации рабочих мест (СОУТ)</div>
+                                <div class="form-wrapper__item"><input type="checkbox">Тендерный отдел</div>
+                                <div class="form-wrapper__item"><input type="checkbox">Я не знаю, нужна помощь в подборе</div>
+                            </div>
+
+                            <button class="button_next">Далее
+                                <img src="icons/arrow_next.svg" alt="nextarrow">
+                            </button>
+                        </form>
+
+                        <button class="button_previous">
+                            <img src="icons/arrow_back.svg" alt="backarrow">
+                            Назад
+                        </button>
+                    </div>
+                </div>
+
+                <div class="tabcontent">
+                    <img src="img/selection_employees.webp" alt="employees" class="tabcontent__img">
+                    <div class="tabcontent__wrapper">
+                        <div class="tabcontent__title">
+                            <div class="tabcontent__title-icon">3</div>
+                            <h3 class="tabcontent__title-text">Укажите количество сотрудников, которым нужно<br>провести профосмотр.</h3>
+                        </div>
+                        <form action="#" class="form-employees" data-form>
+                            <textarea required placeholder="Введите число" name="text-employees" class="text-activity"></textarea>
+
+                            <button class="button_next">Далее
+                                <img src="icons/arrow_next.svg" alt="nextarrow">
+                            </button>
+                        </form>
+                        <button class="button_previous">
+                            <img src="icons/arrow_back.svg" alt="backarrow">
+                            Назад
+                        </button>
+                    </div>
+                </div>
+
+                <div class="tabcontent">
+                    <img src="img/selection_place.webp" alt="phonendoscope" class="tabcontent__img">
+                    <div class="tabcontent__wrapper">
+                        <div class="tabcontent__title">
+                            <div class="tabcontent__title-icon">4</div>
+                            <h3 class="tabcontent__title-text">Вы планируете пройти профосмотр в одном из наших медцентров или требуется выездная бригада?</h3>
+                        </div>
+                        <form action="#" class="form-place" data-form>
+                            <div class="form-place__item"><input type="radio" name="place" value="medical-center">В медцентре</div>
+                            <div class="form-place__item"><input type="radio" name="place" value="mobile-team">Требуется выездная бригада</div>
+
+                            <button class="button_next">Далее
+                                <img src="icons/arrow_next.svg" alt="nextarrow">
+                            </button>
+                        </form>
+                        <button class="button_previous">
+                            <img src="icons/arrow_back.svg" alt="backarrow">
+                            Назад
+                        </button>
+                    </div>
+                </div>
+
+
+                <div class="tabcontent tabcontent__form">
+                    <div class="tabcontent__form-title">Введите номер телефона, и мы вышлем вам расчет стоимости профосмотра<br>и коммерческое предложение</div>
+                    <form action="#" class="feed-form feed-form_selection-tab">
+                        <input required type="tel" name="phone" placeholder="Ваш номер телефона*">
+                        <button>Получить коммерческое предложение</button>
+                        <div class="feed-form__descr">Передавая информацию сайту, вы принимаете условия<br>
+                            <a href="#">Политики защиты персональной информации</a>
+                        </div>
+                    </form>
+                </div>
+
+                <div class="tabheader">
+                    <div class="tabheader__item tabheader__item_active">Шаг 1</div>
+                    <div class="tabheader__item">Шаг 2</div>
+                    <div class="tabheader__item">Шаг 3</div>
+                    <div class="tabheader__item">Шаг 4</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- <div class="modal">
+        <div class="modal__dialog">
+            <div class="modal__content">
+                <form action="#">
+                    <div class="modal__close" data-close>&times;</div>
+                    <div class="modal__title">Мы свяжемся с вами как можно быстрее!</div>
+                    <input required placeholder="Ваше имя" name="name" type="text" class="modal__input">
+                    <input required placeholder="Ваш номер телефона" name="phone" type="phone" class="modal__input">
+                    <button class="btn btn_dark btn_min">Перезвонить мне</button>
+                </form>
+            </div>
+        </div>
+    </div> -->
+    <script src="js/script.js"></script>
+</body>
+</html>

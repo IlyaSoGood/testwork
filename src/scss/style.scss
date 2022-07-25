@@ -1,0 +1,33 @@
+@import 'libs/bootstrap-reboot.min';
+@import 'libs/font';
+
+@import 'base/variables';
+
+.container {
+    position: relative;
+    max-width: 1170px;
+    margin: 0 auto;
+}
+.hamburger {
+    display: none;
+}
+
+@import 'blocks/header';
+@import 'blocks/promo';
+@import 'blocks/forms';
+@import 'blocks/selection';
+@import 'animations';
+@import 'media';
+
+* {
+    font-family: 'Gotham Pro';
+    a {
+        text-decoration: none;
+    }
+    ul {
+        padding: 0;
+    }
+    li {
+        list-style-type: none;
+    }
+}

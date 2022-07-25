@@ -1,0 +1,68 @@
+.header {
+    height: 130px;
+    .container {
+        display: flex;
+        justify-content: space-between;
+    }
+    &__wrapper {
+        margin-top: 20px;
+    }
+    &__logo {
+        width: 423px;
+        display: flex;
+        justify-content: space-between;
+        &_sub {
+            margin-top: 15px;
+            position: relative;
+            &::before {
+                content: "";
+                position: absolute;
+                margin-right: 20px;
+                display: block;
+                left: -15px;
+                width: 1px;
+                height: 31px;
+                background-color: $main-color
+            }
+        }
+    }
+    &__menu {
+        margin: 0;
+        margin-top: 10px;
+        display: flex;
+        width: 805px;
+        justify-content: space-between;
+        a {
+            color: #1A191C;
+            font-size: 14px;
+            font-weight: 400;
+        }
+    }
+    &__contacts {
+        margin-top: 30px;
+        a {
+            display: block;
+        }
+    }
+    &__email {
+        font-size: 14px;
+        font-weight: 400;
+        color: #000000
+    }
+    &__phone {
+        font-size: 19px;
+        font-weight: 900;
+        color: #1A191C
+    }
+    &__city {
+        margin-top: 10px;
+        font-size: 14px;
+        font-weight: 400;
+        span {
+            color: $main-color;
+            &:hover {
+                cursor: pointer;
+            }
+        }
+    }
+}
